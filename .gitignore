@@ -1,3 +1,14 @@
+# Gradle
+.gradle
+build/
+
+# IDE
+.idea
+*.iml
+
+# Mac
+**/.DS_Store
+
 # Compiled class file
 *.class
 
