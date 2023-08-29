@@ -4,13 +4,14 @@ application {
 
 dependencies {
     api(project(":core"))
+    implementation("org.springframework.boot:spring-boot-starter-security")
     implementation("org.springframework.boot:spring-boot-starter-validation")
 }
 
 tasks.bootJar {
-    enabled = false
+    enabled = true
 }
 
 tasks.jar {
-    enabled = true
+    enabled = false
 }
