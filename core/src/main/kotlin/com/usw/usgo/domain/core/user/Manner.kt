@@ -1,4 +1,4 @@
-package com.usw.usgo.domain.user
+package com.usw.usgo.domain.core.user
 
 import jakarta.persistence.Embeddable
 import java.math.BigDecimal

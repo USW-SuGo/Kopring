@@ -1,21 +1,21 @@
-package com.usw.usgo.domain.user
+package com.usw.usgo.domain.core.user
 
-import com.usw.usgo.domain.BaseEntity
+import com.usw.usgo.domain.core.BaseEntity
 import jakarta.persistence.*
 
 @Entity
-@Table(name = "users")
+@Table(name = "user")
 class User(
-    @Column(length = 50)
+    @Column(name = "login_id", length = 50, nullable = false)
     val loginId: String,
 
-    @Column(length = 50)
+    @Column(name = "email", length = 50, nullable = false)
     val email: String,
 
-    @Column(length = 50)
+    @Column(name = "nickname", length = 50, nullable = false)
     var nickname: String,
 
-    @Column(length = 50)
+    @Column(name = "password", length = 50, nullable = false)
     var password: String,
 
     @Embedded
